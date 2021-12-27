@@ -12,6 +12,14 @@
   font-family: "amatic+SC", "Assistant", "Raleway";
 }
 
+.borderized {
+  border: solid 2px #41403e;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
+}
+
 header {
   display: flex;
   height: 70px;
@@ -39,11 +47,11 @@ header li {
   margin: 0 10px;
   list-style-type: none;
   font-size: 20px;
-  border: solid 2px #41403e;
+  /* border: solid 2px #41403e;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
-  background-color: #fff;
+  background-color: #fff; */
 }
 
 header li a {
@@ -73,7 +81,7 @@ header li a:hover {
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 75vh;
   position: absolute;
   box-shadow: 0 0 8px 8px white inset;
   z-index: 1;
@@ -91,24 +99,24 @@ header li a:hover {
 
 .projects {
   padding: 30px 0;
-  height: 600px;
+  /* height: 600px; */
   background-color: #9fedd7;
 }
 
 .project-display {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
 }
 
 .projects h1 {
   font-size: 40px;
   color: black;
-  border: solid 2px #41403e;
+  /* border: solid 2px #41403e;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
-  background-color: #fff;
+  background-color: #fff; */
   display: inline-block;
   padding: 5px 10px;
   justify-content: center;
@@ -116,7 +124,8 @@ header li a:hover {
 }
 
 .project-display img {
-  width: 400px;
+  /* max-width: 400px; */
+  width: 25vw;
   height: auto;
   padding: 0;
   margin: 25px 20px;
@@ -150,11 +159,11 @@ header li a:hover {
 
 .personal h2 {
   font-size: 40px;
-  border: solid 2px #41403e;
+  /* border: solid 2px #41403e;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
-  background-color: #fff;
+  background-color: #fff; */
   display: inline-block;
   padding: 5px 10px;
   margin: 0 20px 25px 20px;
@@ -165,7 +174,7 @@ header li a:hover {
 }
 
 .about-me img {
-  /* border-radius: 50%; */
+  border-radius: 15%;
   margin: 0 20px 25px 20px;
   height: 200px;
   width: auto;
@@ -178,17 +187,17 @@ header li a:hover {
 
 .cv {
   padding: 70px 0;
-  height: 600px;
+  /* height: 75vh; */
   background-color: #fce181;
 }
 
 .cv h2 {
   font-size: 40px;
-  border: solid 2px #41403e;
+  /* border: solid 2px #41403e;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
-  background-color: #fff;
+  background-color: #fff; */
   display: inline-block;
   padding: 5px 10px;
   margin: 0 20px 25px 20px;
@@ -210,8 +219,8 @@ header li a:hover {
 }
 
 .social img {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 980px) {
@@ -239,11 +248,11 @@ header li a:hover {
     justify-content: space-between;
   }
 
-  .project1,
+  /* .project1,
   .project2,
   .project3 {
     width: 20%;
-  }
+  } */
 
   .cv h2 {
     font-size: 39px;
@@ -255,6 +264,9 @@ header li a:hover {
     /* background-size: cover; */
   }
 
+  ul {
+    display: none;
+  }
   .hero {
     height: 350px;
     width: 100%;
@@ -262,6 +274,12 @@ header li a:hover {
 
   .hero img {
     height: 350px;
-    width: auto;
+    width: 100vw;
+  }
+  .project-display {
+    flex-direction: column;
+  }
+  .project-display img {
+    width: 75vw;
   }
 }
