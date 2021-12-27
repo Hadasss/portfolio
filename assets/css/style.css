@@ -1,3 +1,10 @@
+:root {
+  --section-margin-general: ;
+  --section-margin-980: ;
+  --section-margin-768: ;
+  --section-margin-575: ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +13,20 @@
 }
 
 header {
-  margin-bottom: 20px;
   display: flex;
-  background-color: lightgrey;
+  height: 70px;
+  background-color: #fef9c7;
   position: sticky;
   top: 0;
+  box-shadow: 5px 5px 5px rgb(66, 65, 65);
+  z-index: 9999;
   justify-content: space-between;
-  box-shadow: 5px 5px 5px grey;
+  align-items: center;
 }
 
-header h1 {
-  font-size: 55px;
+.icon {
+  height: 70px;
+  padding: 10px;
 }
 
 header ul {
@@ -24,36 +34,85 @@ header ul {
 }
 
 header li {
-  justify-content: space-between;
   flex-wrap: wrap;
-  line-height: 3;
   padding: 10px;
+  margin: 0 10px;
   list-style-type: none;
+  font-size: 20px;
+  border: solid 2px #41403e;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
 }
 
 header li a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #3ab37c;
 }
 
 header li a:hover {
-  text-shadow: 0 0 10px rgb(196, 83, 100);
+  text-shadow: 0 0 15px rgb(232, 108, 56);
+}
+
+.hero {
+  background-color: #fef9c7;
+  display: flex;
+  height: 700px;
+  width: 100%;
+
+  /* background-image: url("../images/arizona1111.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; */
+}
+
+.hadas {
+  font-size: 60px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  box-shadow: 0 0 8px 8px white inset;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.hero p {
+  font-size: 40px;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: #f7e84a;
+  z-index: 2;
+  padding: 0;
 }
 
 .projects {
-  margin: 40px 10px;
+  padding: 30px 0;
+  height: 600px;
+  background-color: #9fedd7;
 }
 
 .project-display {
   display: flex;
-  margin: 40px 10px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .projects h1 {
   font-size: 40px;
+  color: black;
+  border: solid 2px #41403e;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  justify-content: center;
+  margin: 0 20px 25px 20px;
 }
 
 .project-display img {
@@ -67,6 +126,7 @@ header li a:hover {
 
 .project-display img:hover {
   transform: scale(1.3);
+  z-index: 2;
 }
 
 .project1,
@@ -76,11 +136,28 @@ header li a:hover {
 }
 
 .contact {
-  margin: 40px 10px;
+  padding: 30px 0;
+  background-color: #e7d8c9;
+  padding: 70px 0;
+  height: 400px;
 }
 
 .personal {
-  margin: 40px 10px;
+  padding: 70px 0;
+  background-color: #026670;
+  height: 600px;
+}
+
+.personal h2 {
+  font-size: 40px;
+  border: solid 2px #41403e;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 20px 25px 20px;
 }
 
 .about-me {
@@ -88,16 +165,103 @@ header li a:hover {
 }
 
 .about-me img {
-  height: auto;
-  width: 250px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  margin: 0 20px 25px 20px;
+  height: 200px;
+  width: auto;
 }
 
-.social img {
-  height: 5%;
-  width: 5%;
+.about-me p {
+  margin: 0 0 25px 25px;
+  color: #fff;
 }
 
 .cv {
-  margin: 40px 10px;
+  padding: 70px 0;
+  height: 600px;
+  background-color: #fce181;
+}
+
+.cv h2 {
+  font-size: 40px;
+  border: solid 2px #41403e;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 20px 25px 20px;
+}
+
+.other-stuff {
+  margin: 0 0 35px 20px;
+  display: flex;
+}
+
+.work-experience {
+  flex-grow: 2;
+}
+
+.education,
+.volunteer-work {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.social img {
+  height: 80px;
+  width: 80px;
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+
+  .hero img {
+    height: 500px;
+    width: auto;
+  }
+
+  .hero p {
+    font-size: 28px;
+  }
+
+  .projects {
+    padding: 20px 15px;
+  }
+
+  .project-display {
+    justify-content: space-between;
+  }
+
+  .project1,
+  .project2,
+  .project3 {
+    width: 20%;
+  }
+
+  .cv h2 {
+    font-size: 39px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  * {
+    /* background-size: cover; */
+  }
+
+  .hero {
+    height: 350px;
+    width: 100%;
+  }
+
+  .hero img {
+    height: 350px;
+    width: auto;
+  }
 }
