@@ -1,10 +1,3 @@
-:root {
-  --section-margin-general: ;
-  --section-margin-980: ;
-  --section-margin-768: ;
-  --section-margin-575: ;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +17,7 @@ header {
   display: flex;
   height: 70px;
   background-color: #fef9c7;
+  padding: 10px;
   position: sticky;
   top: 0;
   box-shadow: 5px 5px 5px rgb(66, 65, 65);
@@ -32,13 +26,14 @@ header {
   align-items: center;
 }
 
-.icon {
-  height: 70px;
-  padding: 10px;
+.cactus {
+  display: block;
+  min-width: 100%;
 }
 
 header ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 header li {
@@ -60,8 +55,79 @@ header li a {
   color: #3ab37c;
 }
 
-header li a:hover {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu li a:hover {
   text-shadow: 0 0 15px rgb(232, 108, 56);
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: black;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  border-radius: 10px;
+  background: black;
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  top: -10px;
+  width: 20px;
+}
+
+.hamburger:after {
+  top: 10px;
+  width: 25px;
+}
+
+.toggle-menu {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger,
+.toggle-menu {
+  display: none;
+}
+
+.navigation input:checked ~ .hamburger {
+  background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .menu {
+  right: 0;
 }
 
 .hero {
@@ -69,10 +135,6 @@ header li a:hover {
   display: flex;
   height: 700px;
   width: 100%;
-
-  /* background-image: url("../images/arizona1111.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto; */
 }
 
 .hadas {
@@ -148,13 +210,13 @@ header li a:hover {
   padding: 30px 0;
   background-color: #e7d8c9;
   padding: 70px 0;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .personal {
   padding: 70px 0;
   background-color: #026670;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .personal h2 {
@@ -174,15 +236,18 @@ header li a:hover {
 }
 
 .about-me img {
-  border-radius: 15%;
+  /* border-radius: 15%; */
   margin: 0 20px 25px 20px;
   height: 200px;
   width: auto;
+  border-radius: 265px 18px 235px 18px/18px 235px 18px 265px;
+  box-shadow: 4px 10px 6px -8px hsla(0, 0%, 0%, 0.5);
 }
 
 .about-me p {
   margin: 0 0 25px 25px;
   color: #fff;
+  padding: 15px;
 }
 
 .cv {
@@ -204,12 +269,12 @@ header li a:hover {
 }
 
 .other-stuff {
-  margin: 0 0 35px 20px;
   display: flex;
 }
 
 .work-experience {
   flex-grow: 2;
+  padding: 15px;
 }
 
 .education,
@@ -218,22 +283,40 @@ header li a:hover {
   padding: 15px;
 }
 
+.contact {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 .social img {
-  height: 50px;
-  width: 50px;
+  margin: 15px;
+}
+
+.social img:hover {
+  opacity: 0.7;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 980px) {
+  .hero {
+    height: 75vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 500px;
+    height: 75vh;
   }
 
   .hero img {
-    height: 500px;
-    width: auto;
+    /* height: 500px; */
   }
 
   .hero p {
@@ -248,25 +331,48 @@ header li a:hover {
     justify-content: space-between;
   }
 
-  /* .project1,
-  .project2,
-  .project3 {
-    width: 20%;
-  } */
-
   .cv h2 {
     font-size: 39px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  * {
-    /* background-size: cover; */
+  header {
+    padding: 10px 20px;
   }
 
-  ul {
-    display: none;
+  .hamburger,
+  .toggle-menu {
+    display: block;
   }
+
+  .menu {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: #fef9c7;
+    width: 180px;
+    height: 50vh;
+    padding-top: 65px;
+    transition: ease 0.4s;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li a {
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .menu li a:hover {
+    text-shadow: 0 0 15px rgb(232, 108, 56);
+  }
+
   .hero {
     height: 350px;
     width: 100%;
@@ -276,10 +382,51 @@ header li a:hover {
     height: 350px;
     width: 100vw;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .project-display {
     flex-direction: column;
   }
+
   .project-display img {
     width: 75vw;
+  }
+
+  .personal {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .personal h2 {
+    display: inline;
+  }
+
+  .personal img {
+    justify-content: flex-end;
+  }
+
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .cv h2 {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .other-stuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
