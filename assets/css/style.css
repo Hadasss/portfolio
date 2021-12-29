@@ -1,8 +1,18 @@
+:root {
+  --section-padding: 70px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "amatic+SC", "Assistant", "Raleway";
+  font-family: "Amatic+SC", "Assistant", "Raleway";
+}
+
+h1,
+h2,
+.menu li a {
+  font-family: "Amatic SC";
 }
 
 .borderized {
@@ -38,7 +48,7 @@ header ul {
 
 header li {
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px;
   margin: 0 10px;
   list-style-type: none;
   font-size: 20px;
@@ -46,8 +56,7 @@ header li {
 
 header li a {
   text-decoration: none;
-  font-weight: bold;
-  color: #3ab37c;
+  color: #14aa67;
 }
 
 .navigation {
@@ -133,6 +142,7 @@ header li a {
 }
 
 .hadas {
+  font-family: "Amatic SC";
   font-size: 60px;
 }
 
@@ -140,76 +150,31 @@ header li a {
   width: 100%;
   height: 75vh;
   position: absolute;
-  box-shadow: 0 0 8px 8px white inset;
   z-index: 1;
   opacity: 0.8;
 }
 
 .hero p {
+  font-family: "Amatic SC";
   font-size: 40px;
   margin-top: 5%;
   margin-left: 5%;
   color: #fce181;
   z-index: 2;
-  padding: 0;
 }
 
 .mobile-break {
   display: none;
 }
 
-.projects {
-  padding: 70px 0;
-  background-color: #9fedd7;
-}
-
-.project-display {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.projects h1 {
-  font-size: 40px;
-  color: black;
-  display: inline-block;
-  padding: 5px 10px;
-  justify-content: center;
-  margin: 0 20px 25px 20px;
-}
-
-.project-display img {
-  width: 25vw;
-  height: auto;
-  padding: 0;
-  margin: 25px 20px;
-  transition: transform 0.2s;
-  box-shadow: 5px 5px 5px grey;
-}
-
-.project-display img:hover {
-  transform: scale(1.2);
-  z-index: 2;
-}
-
-.project1,
-.project2,
-.project3,
-.project4 {
-  text-align: center;
-}
-
-.contact {
-  padding: 30px 0;
-  background-color: #e7d8c9;
-  padding: 70px 0;
-}
-
 .personal {
-  padding: 70px 0;
+  padding: var(--section-padding);
   background-color: #026670;
 }
 
-.personal h2 {
+.personal h2,
+.projects h1,
+.cv h2 {
   font-size: 40px;
   display: inline-block;
   padding: 5px 10px;
@@ -233,34 +198,54 @@ header li a {
   padding: 0 25px;
 }
 
-.cv {
-  padding: 70px 0;
-  background-color: #fce181;
+.projects {
+  padding: var(--section-padding);
+  background-color: #9fedd7;
 }
 
-.cv h2 {
-  font-size: 40px;
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 0 20px 25px 20px;
+.project-display {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-display img {
+  width: 25vw;
+  height: auto;
+  padding: 0;
+  margin: 25px 20px;
+  transition: transform 0.2s;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.project-display img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.project1,
+.project2,
+.project3 {
+  text-align: center;
+}
+
+.cv {
+  padding: var(--section-padding);
+  background-color: #fce181;
 }
 
 .other-stuff {
   display: flex;
 }
 
-.work-experience {
-  flex-grow: 2;
-  padding: 15px;
-}
-
+.work-experience,
 .education,
 .volunteer-work {
-  flex-grow: 1;
   padding: 15px;
 }
 
 .contact {
+  background-color: #e7d8c9;
+  padding: var(--section-padding);
   text-align: center;
 }
 
@@ -349,12 +334,12 @@ header li a {
   }
 
   .hero {
-    height: 350px;
+    height: 440px;
     width: 100%;
   }
 
   .hero img {
-    height: 350px;
+    height: 440px;
     width: 100vw;
     opacity: 0.7;
   }
@@ -362,33 +347,10 @@ header li a {
   .hero p {
     display: inline-block;
     font-size: 160%;
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
-    max-width: 50%;
-    max-height: 50%;
   }
 
   .mobile-break {
     display: block;
-  }
-
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 70px 0;
-  }
-
-  .projects h1 {
-    text-align: center;
-  }
-
-  .project-display {
-    flex-direction: column;
-  }
-
-  .project-display img {
-    width: 75vw;
   }
 
   .personal {
@@ -396,10 +358,6 @@ header li a {
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-
-  .personal h2 {
-    display: inline;
   }
 
   .personal img {
@@ -413,13 +371,33 @@ header li a {
     align-content: center;
   }
 
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+  }
+
+  .projects h1,
   .cv h2 {
     text-align: center;
+  }
+
+  .project-display {
+    flex-direction: column;
+  }
+
+  .project-display img {
+    width: 75vw;
   }
 
   .other-stuff {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .social img {
+    margin: 0;
   }
 }
