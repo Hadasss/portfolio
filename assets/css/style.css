@@ -137,7 +137,7 @@ header li a {
 .hero {
   background-color: #fef9c7;
   display: flex;
-  height: 700px;
+  height: 75vh;
   width: 100%;
 }
 
@@ -265,28 +265,6 @@ header li a {
 
 .contact-info h2 {
   margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1025px) {
-  .hero img {
-    height: 50vh;
-  }
-}
-
-@media screen and (width: 1024px) and (height: 1366px) {
-  .hero img {
-    height: 50vh;
-  }
-}
-
-@media screen and (width: 1024px) and (height: 600px) {
-  .hero {
-    height: 500px;
-  }
-
-  .hero img {
-    height: 80vh;
-  }
 }
 
 @media screen and (max-width: 1023px) {
