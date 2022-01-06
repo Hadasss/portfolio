@@ -147,6 +147,9 @@ header li a {
 }
 
 .hero img {
+  /* overflow-x: hidden; */
+  object-fit: cover;
+  /* background-position: center; */
   width: 100%;
   height: 75vh;
   position: absolute;
@@ -266,8 +269,14 @@ header li a {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 980px) {
-  .hero {
+@media screen and (max-width: 1025px) {
+  .hero img {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero img {
     height: 75vh;
   }
 }
