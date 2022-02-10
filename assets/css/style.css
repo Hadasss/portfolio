@@ -199,35 +199,47 @@ header li a {
   padding: 0 25px;
 }
 
-.projects {
-  padding: var(--section-padding);
-  background-color: #9fedd7;
+.card,
+.card-body {
+  border-radius: 3%;
 }
 
-.project-display {
+.card {
+  box-shadow: 2px 6px 5px -3px hsla(0, 0%, 0%, 0.5);
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+
+.projects {
+  /* padding: var(--section-padding); */
+  background-color: #9fedd7;
+  padding: 20px;
+}
+
+/* .project-display {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
-.project-display img {
+/* .project-display img {
   width: 25vw;
   height: auto;
   padding: 0;
   margin: 25px 20px;
   transition: transform 0.2s;
   box-shadow: 5px 5px 5px grey;
-}
+} */
 
-.project-display img:hover {
+/* .project-display img:hover {
   transform: scale(1.2);
   z-index: 2;
-}
+} */
 
-.project1,
+/* .project1,
 .project2,
 .project3 {
   text-align: center;
-}
+} */
 
 .cv {
   padding: var(--section-padding);

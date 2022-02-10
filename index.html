@@ -10,16 +10,26 @@
       type="image/jpg"
       href="./assets/images/icons8-cactus-48.png"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300&family=Raleway:wght@200&display=swap');
-      </style>
-
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200;300&family=Raleway:wght@200&display=swap");
+    </style>
   </head>
   <body>
     <header>
       <a href="./index.html">
-        <img class="cactus" src="./assets/images/icons8-cactus-48.png" alt="cactus icon" />
+        <img
+          class="cactus"
+          src="./assets/images/icons8-cactus-48.png"
+          alt="cactus icon"
+        />
       </a>
 
       <nav class="navigation">
@@ -38,7 +48,8 @@
 
     <section class="hero">
       <p>
-        Hi. My name is <span class="hadas">Hadas</span>, <br class="mobile-break" />an Arizona based<br />software developer.
+        Hi. My name is <span class="hadas">Hadas</span>,
+        <br class="mobile-break" />an Arizona based<br />software developer.
       </p>
 
       <img src="./assets/images/arizona1_11.jpg" alt="" />
@@ -55,50 +66,185 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos rem
           ut molestias placeat delectus distinctio suscipit quidem quibusdam
           incidunt ullam alias deleniti nemo aut corrupti quasi, perferendis,
-          explicabo sapiente? Lorem, ipsum 
-          soluta eaque autem pariatur suscipit ex deserunt. Minus dolorum
-          temporibus consequuntur repellat, doloribus quaerat eligendi. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quas illum repudiandae enim, voluptas fuga rerum modi nostrum. Ea officiis autem fugiat sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quos nemo aliquid molestiae omnis error doloribus iusto id magni quae? Dolor consequuntur pariatur, delectus iste.
+          explicabo sapiente? Lorem, ipsum soluta eaque autem pariatur suscipit
+          ex deserunt. Minus dolorum temporibus consequuntur repellat, doloribus
+          quaerat eligendi. <br />Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Vitae quas illum repudiandae enim, voluptas fuga
+          rerum modi nostrum. Ea officiis autem fugiat sit! Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Ipsum quos nemo aliquid
+          molestiae omnis error doloribus iusto id magni quae? Dolor
+          consequuntur pariatur, delectus iste.
         </p>
       </article>
     </section>
 
     <section class="projects" id="projects">
       <h1 class="borderized">Some of My Projects</h1>
-      <div class="project-display">
-        <div class="project1">
-          <h3>Memory Game</h3>
-
-          <a
-            href="https://hadasss.github.io/Avengers-Memory-Game/"
-            target="_blank"
-            ><img src="./assets/images/project1_1.JPG" alt="Memory Game"
-          /></a>
-        </div>
-        <div class="project2">
-          <h3>Beat The Dice</h3>
-          <a href="https://hadasss.github.io/Beat-The-Dice/" target="_blank"
-            ><img src="./assets/images/project2.JPG" alt="Beat The Dice Game"
-          /></a>
-        </div>
-      
-          <div class="project3">
-            <h3>Run-Buddy</h3>
-            <a href="https://hadasss.github.io/run-buddy/"
-              ><img src="./assets/images/project4.JPG" alt="Run-Buddy Website"
-            /></a>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project1_1.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Memory Game</h5>
+              <p class="card-text">
+                Memory card game. <br />Javascript, CSS, HTML<br /><a
+                  href="https://hadasss.github.io/Avengers-Memory-Game/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
           </div>
-          
         </div>
-               
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project2.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beat The Dice</h5>
+              <p class="card-text">
+                Dice game for two players. <br />CSS, Javascript, HTML<br /><a
+                  href="https://hadasss.github.io/Beat-The-Dice/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project3.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Musical Gallery</h5>
+              <p class="card-text">
+                Gallery of pictures, each pic plays a song. <br />HTML, CSS,
+                Javascript, jQuery<br /><a
+                  href="https://hadasss.github.io/jquery-musical-gallery/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project4.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Run-Buddy</h5>
+              <p class="card-text">
+                Responsive landing page. <br />HTML, CSS<br /><a
+                  href="https://hadasss.github.io/run-buddy/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project5_1.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marvel Mayhem</h5>
+              <p class="card-text">
+                Find your favorite Marvel superhero in featured appearances.
+                <br />Javascript, Tailwind, HTML, CSS, Server side APIs <br /><a
+                  href="https://hadasss.github.io/movified/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project6_1.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Workday Planner</h5>
+              <p class="card-text">
+                Manage your workday with persistent data <br />Javascript, CSS,
+                HTML, Bootstrap<br /><a
+                  href="https://hadasss.github.io/planogramma/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project 7_1.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Happy Trails</h5>
+              <p class="card-text">
+                Weather Dashboard, pulls data from API, 5 day future forecast,
+                search history <br />Javascript, CSS, Bulma, HTML<br /><a
+                  href="https://hadasss.github.io/happy-trails/"
+                  >Link to live app</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./assets/images/project8_1.JPG"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coding Quiz</h5>
+              <p class="card-text">
+                Coding quiz game against the clock. Scoreboard shows high scores
+                <br />Javascript, HTML, CSS<br /><a
+                  href="https://hadasss.github.io/coding-quiz/"
+                  >Link to live app</a
+                >
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
     </section>
-
 
     <section class="cv" id="work-experience">
       <h2 class="borderized">Work Experience, Education and More</h2>
       <div class="other-stuff">
-        <div class="work-experience" >
+        <div class="work-experience">
           <h3>Work Experience</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo
@@ -134,14 +280,13 @@
     <section class="contact" id="contact">
       <div class="contact-info">
         <h2>Let's Connect!</h2>
-        
       </div>
       <div class="social">
         <a href="tel:480-123-1234"
-        ><img src="./assets/images/icons8-phone-64.png" alt="telephone"
+          ><img src="./assets/images/icons8-phone-64.png" alt="telephone"
         /></a>
         <a href="mailto:hadas.gadish@gmail.com" target="_blank"
-        ><img src="./assets/images/icons8-email-64.png" alt="email"
+          ><img src="./assets/images/icons8-email-64.png" alt="email"
         /></a>
         <a href="https://www.linkedin.com/in/hadas-kamin/" target="_blank"
           ><img src="./assets/images/icons8-linkedin-60.png" alt="linkedin"
@@ -151,5 +296,11 @@
         /></a>
       </div>
     </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
