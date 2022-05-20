@@ -24,6 +24,11 @@ A portfolio to showcase my work to potential employers.
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/80355222/169427700-c62af8e4-8e13-427d-b80c-2a9dc3869f22.png)
+![image](https://user-images.githubusercontent.com/80355222/169427793-a438c5b0-ecef-4df8-954d-2f073ddc264b.png)
+
+
+
 ## Deployment
 
 https://hadasss.github.io/portfolio/
