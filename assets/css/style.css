@@ -199,6 +199,10 @@ header li a {
   padding: 0 25px;
 }
 
+.row {
+  justify-content: center;
+}
+
 .card,
 .card-body {
   border-radius: 3%;
@@ -220,6 +224,11 @@ header li a {
 .projects .card {
   transition: transform 0.2s;
   box-shadow: 3px 3px 5px grey;
+}
+
+.first {
+  width: 90vw;
+  justify-content: center;
 }
 
 .projects .card:hover {

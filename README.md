@@ -1,42 +1,34 @@
-# My Portfolio:
+# Portfolio
 
-This website will be my personal portfolio and base for further develop and use. 
+## Project Description
 
-## User Story:
-
-AS AN employer
-
-I WANT to view a potential employee's deployed portfolio of work samples
-
+AS AN employer  
+I WANT to view a potential employee's deployed portfolio of work samples  
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 
-## Acceptance Criteria:
+## Table Of Contents
 
-GIVEN I need to sample a potential employee's previous work
+- [Installation Instructions](#installation)
+- [App Usage](#usage)
+- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [Questions](#questions)
 
-WHEN I load their portfolio
+## Installation
 
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+No special installation directions.
 
-WHEN I click one of the links in the navigation
+## Usage
 
-THEN the UI scrolls to the corresponding section
+A portfolio to showcase my work to potential employers.
 
-WHEN I click on the link to the section about their work
+## Screenshots
 
-THEN the UI scrolls to a section with titled images of the developer's applications
+## Deployment
 
-WHEN I am presented with the developer's first application
+https://hadasss.github.io/portfolio/
 
-THEN that application's image should be larger in size than the others
+## Questions
 
-WHEN I click on the images of the applications
-
-THEN I am taken to that deployed application
-
-WHEN I resize the page or view the site on various screens and devices
-
-THEN I am presented with a responsive layout that adapts to my viewport
-
-
-
+For more information or questions about the project
+Contact me on GitHub: [Hadas](https://github.com/hadasss/).
